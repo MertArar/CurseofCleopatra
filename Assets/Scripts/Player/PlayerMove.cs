@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     public CharacterController player;
 
     // Speeds
-    public float moveSpeed = 10f;
+    public float moveSpeed = 2f;
     public float leftRightSpeed = 2;
     public float jumpingSpeed = 3;
     public float slidingSpeed = 3;
@@ -51,9 +51,9 @@ public class PlayerMove : MonoBehaviour
             elapsedTime = 0f;
         }
 
-        if (moveSpeed >= 25f)
+        if (moveSpeed >= 15f)
         {
-            moveSpeed = 25f;
+            moveSpeed = 15f;
         }
 
         if (leftRightSpeed >= 6)
